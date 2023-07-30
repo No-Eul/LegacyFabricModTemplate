@@ -1,0 +1,46 @@
+{
+	"schemaVersion": 1,
+	"id": "modid",
+	"version": "${version}",
+	"name": "${name}",
+	"description": "The description of template mod",
+	"contact": {
+		"email": "me@NoEul.dev",
+		"homepage": "https://modrinth.com/mod/legacy-fabric-mod-template",
+		"issues": "https://github.com/No-Eul/LegacyFabricModTemplate/issues",
+		"sources": "https://github.com/No-EulLegacyFabricModTemplate"
+	},
+	"authors": [
+		{
+			"name": "NoEul",
+			"contact": {
+				"email": "me@NoEul.dev",
+				"homepage": "https://NoEul.dev",
+				"sources": "https://github.com/No-Eul"
+			}
+		}
+	],
+	"contributors": [],
+	"license": "MIT",
+	"icon": "assets/modid/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": ["dev.noeul.fabricmod.modid.ModName"]
+	},
+	"mixins": [
+		"modid.mixins.json"
+	],
+	"depends": {
+		"minecraft": "${minecraft_version}",
+		"fabricloader": ">=${loader_version}",
+		"legacy-fabric-api": "*"
+	},
+	"recommends": {
+		"modmenu": "*"
+	},
+	"custom": {
+		"modmenu": {
+			"update_checker": true
+		}
+	}
+}
